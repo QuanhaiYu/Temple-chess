@@ -1,0 +1,55 @@
+.container {
+    border: 1px;
+    border-style: solid;
+    width: 800px;
+    height: 1000px;
+    margin: 100px auto;
+    transform: rotate(0deg);
+    border-color: lightgray;
+}
+
+#Temelp {
+    border: 1px;
+    border-style: solid;
+    width: 24.8%;
+    height: 19.8%;
+    transform: rotate(45deg);
+    margin: 5% auto;
+}
+
+.grid {
+    width: 24.843%;
+    height: 20%;
+    float: left;
+    border: 1px;
+    border-color: red;
+    border-style: solid;
+}
+
+#grid_top_left,
+#grid_left1,
+#grid_left2,
+#grid_bottom_left,
+#grid_top1,
+#grid_center1,
+#grid_center3,
+#grid_bottom1,
+#grid_top2,
+#grid_center2,
+#grid_center4,
+#grid_bottom2 {
+    border-right-style: initial;
+    border-bottom-style: initial;
+}
+
+#grid_bottom_left,
+#grid_bottom1,
+#grid_bottom2 {
+    border-bottom-style: solid;
+}
+
+#grid_top_right,
+#grid_right1,
+#grid_right2 {
+    border-bottom-style: initial;
+}
