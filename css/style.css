@@ -1,28 +1,29 @@
 :root {
     --containerWidth: 825px;
-    --containerHeight: 1125px;
+    --containerHeight: 1425px;
     --chessBoardContainerWidth: 825px;
     --chessBoardContainerHeight: 825px;
     --gridWidth: 200px;
     --gridHeight: 200px;
+    --lineColor: rgba(238, 228, 218, 1);
 }
 
 .container {
     width: var(--containerWidth);
     height: var(--containerHeight);
-    margin: 40px auto;
+    margin: 50px auto;
     /* background-color: coral; */
 }
 
 .temelp {
-    top: 65px;
+    top: 50px;
     left: 312.5px;
     width: 190px;
     height: 190px;
     border-width: 5px;
     border-style: solid;
     transform: rotate(45deg);
-    border-color: lightgray;
+    border-color: var(--lineColor);
     position: relative;
 }
 
@@ -30,7 +31,7 @@
 #line2 {
     width: 275px;
     height: 5px;
-    background-color: lightgray;
+    background-color: var(--lineColor);
     position: relative;
 }
 
@@ -47,11 +48,11 @@
 }
 
 .chessBoardContainer {
-    top: 100px;
+    top: 85px;
     position: relative;
     width: var(--chessBoardContainerWidth);
     height: var(--chessBoardContainerHeight);
-    background-color: lightgray;
+    background-color: var(--lineColor);
 }
 
 .grid {
@@ -73,7 +74,7 @@
     border-width: 5px;
     border-style: solid;
     transform: rotate(45deg);
-    border-color: lightgray;
+    border-color: var(--lineColor);
     position: relative;
 }
 
@@ -81,7 +82,7 @@
 #line4 {
     width: 1160px;
     height: 5px;
-    background-color: lightgray;
+    background-color: var(--lineColor);
     position: relative;
 }
 
