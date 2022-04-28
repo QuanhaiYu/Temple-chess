@@ -1,55 +1,98 @@
-.container {
-    border: 1px;
-    border-style: solid;
-    width: 800px;
-    height: 1000px;
-    margin: 100px auto;
-    transform: rotate(0deg);
-    border-color: lightgray;
+:root {
+    --containerWidth: 825px;
+    --containerHeight: 1125px;
+    --chessBoardContainerWidth: 825px;
+    --chessBoardContainerHeight: 825px;
+    --gridWidth: 200px;
+    --gridHeight: 200px;
 }
 
-#Temelp {
-    border: 1px;
+.container {
+    width: var(--containerWidth);
+    height: var(--containerHeight);
+    margin: 40px auto;
+    /* background-color: coral; */
+}
+
+.temelp {
+    top: 65px;
+    left: 312.5px;
+    width: 190px;
+    height: 190px;
+    border-width: 5px;
     border-style: solid;
-    width: 24.8%;
-    height: 19.8%;
     transform: rotate(45deg);
-    margin: 5% auto;
+    border-color: lightgray;
+    position: relative;
+}
+
+#line1,
+#line2 {
+    width: 275px;
+    height: 5px;
+    background-color: lightgray;
+    position: relative;
+}
+
+#line1 {
+    top: 48.3%;
+    left: -22.8%;
+    transform: rotate(45deg);
+}
+
+#line2 {
+    top: 46.5%;
+    left: -22.8%;
+    transform: rotate(-45deg);
+}
+
+.chessBoardContainer {
+    top: 100px;
+    position: relative;
+    width: var(--chessBoardContainerWidth);
+    height: var(--chessBoardContainerHeight);
+    background-color: lightgray;
 }
 
 .grid {
-    width: 24.843%;
-    height: 20%;
     float: left;
-    border: 1px;
-    border-color: red;
+    width: var(--gridWidth);
+    height: var(--gridHeight);
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: white;
+    text-align: center;
+    line-height: 200px;
+}
+
+.gridA {
+    top: 120px;
+    left: 121px;
+    width: 573px;
+    height: 573px;
+    border-width: 5px;
     border-style: solid;
+    transform: rotate(45deg);
+    border-color: lightgray;
+    position: relative;
 }
 
-#grid_top_left,
-#grid_left1,
-#grid_left2,
-#grid_bottom_left,
-#grid_top1,
-#grid_center1,
-#grid_center3,
-#grid_bottom1,
-#grid_top2,
-#grid_center2,
-#grid_center4,
-#grid_bottom2 {
-    border-right-style: initial;
-    border-bottom-style: initial;
+#line3,
+#line4 {
+    width: 1160px;
+    height: 5px;
+    background-color: lightgray;
+    position: relative;
 }
 
-#grid_bottom_left,
-#grid_bottom1,
-#grid_bottom2 {
-    border-bottom-style: solid;
+#line3 {
+    top: -21%;
+    left: -20.4%;
+    transform: rotate(45deg);
 }
 
-#grid_top_right,
-#grid_right1,
-#grid_right2 {
-    border-bottom-style: initial;
+#line4 {
+    top: -21.5%;
+    left: -20.4%;
+    transform: rotate(-45deg);
 }
