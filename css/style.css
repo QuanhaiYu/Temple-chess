@@ -5,7 +5,7 @@
     --chessBoardContainerHeight: 825px;
     --gridWidth: 200px;
     --gridHeight: 200px;
-    --lineColor: rgba(238, 228, 218, 1);
+    --lineColor: rgba(61, 61, 61, 0.2);
 }
 
 .container {
@@ -16,10 +16,10 @@
 }
 
 .temelp {
-    top: 50px;
-    left: 312.5px;
-    width: 190px;
-    height: 190px;
+    top: 44px;
+    left: 297px;
+    width: 220px;
+    height: 220px;
     border-width: 5px;
     border-style: solid;
     transform: rotate(45deg);
@@ -29,7 +29,7 @@
 
 #line1,
 #line2 {
-    width: 275px;
+    width: 318px;
     height: 5px;
     background-color: var(--lineColor);
     position: relative;
@@ -37,13 +37,13 @@
 
 #line1 {
     top: 48.3%;
-    left: -22.8%;
+    left: -22.7%;
     transform: rotate(45deg);
 }
 
 #line2 {
     top: 46.5%;
-    left: -22.8%;
+    left: -22.1%;
     transform: rotate(-45deg);
 }
 
@@ -96,4 +96,17 @@
     top: -21.5%;
     left: -20.4%;
     transform: rotate(-45deg);
+}
+
+.gameTielt {
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 260px;
+    margin-top: -130px;
+    margin-left: -200px;
+    text-align: center;
+    font-size: 96px;
+    color: rgba(231, 76, 60, 0.12);
+    position: absolute;
 }
