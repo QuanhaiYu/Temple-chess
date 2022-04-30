@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/style.css" type="text/css" rel="stylesheet">
+
     <title>Temelp chess</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="containerId">
 
         <!-- 庙 -->
         <div class="temelp">
@@ -49,9 +50,37 @@
             <div id="line4"></div>
 
             <!-- game name -->
-            <div class="gameTielt">TEMELP<br>CHESS</div>
+            <div class="gameName">TEMELP<br>CHESS</div>
         </div>
+
+        <div class="coordinateContainer">
+            <!-- 鼠标点击或触摸坐标值 -->
+            <div class="downCoordinateContainer">
+                <div id="mouseMoveValue">mouseDown</div>
+                <div class="coordinateValue">ABS</div>
+                <div class="coordinateValue" id="down_x_abs">0</div>
+                <div class="coordinateValue" id="down_y_abs">0</div>
+                <div class="coordinateValue">REL</div>
+                <div class="coordinateValue" id="down_x_rel">0</div>
+                <div class="coordinateValue" id="down_y_rel">0</div>
+            </div>
+
+            <!-- 鼠标移动坐标值 -->
+            <div class="moveCoordinateContainer">
+                <div id="mouseDownValue">mouseMove</div>
+                <div class="coordinateValue">ABS</div>
+                <div class="coordinateValue" id="move_x_abs">0</div>
+                <div class="coordinateValue" id="move_y_abs">0</div>
+                <div class="coordinateValue">REL</div>
+                <div class="coordinateValue" id="move_x_rel">0</div>
+                <div class="coordinateValue" id="move_y_rel">0</div>
+            </div>
+        </div>
+
     </div>
+
+    <script src="../js/Index.js"></script>
+
 </body>
 
 </html>

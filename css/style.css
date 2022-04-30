@@ -1,23 +1,29 @@
 :root {
-    --containerWidth: 825px;
-    --containerHeight: 1425px;
+    --containerWidth: 865px;
+    --containerHeight: 1225px;
     --chessBoardContainerWidth: 825px;
     --chessBoardContainerHeight: 825px;
     --gridWidth: 200px;
     --gridHeight: 200px;
-    --lineColor: rgba(61, 61, 61, 0.2);
+    --lineColor: lightgray;
 }
+
+
+/* 游戏容器 */
 
 .container {
     width: var(--containerWidth);
     height: var(--containerHeight);
-    margin: 50px auto;
+    margin: 0px auto;
     /* background-color: coral; */
 }
 
+
+/* 棋盘 */
+
 .temelp {
-    top: 44px;
-    left: 297px;
+    top: 64px;
+    left: 317px;
     width: 220px;
     height: 220px;
     border-width: 5px;
@@ -48,7 +54,8 @@
 }
 
 .chessBoardContainer {
-    top: 85px;
+    top: 105px;
+    left: 20px;
     position: relative;
     width: var(--chessBoardContainerWidth);
     height: var(--chessBoardContainerHeight);
@@ -98,7 +105,7 @@
     transform: rotate(-45deg);
 }
 
-.gameTielt {
+.gameName {
     top: 50%;
     left: 50%;
     width: 400px;
@@ -107,6 +114,64 @@
     margin-left: -200px;
     text-align: center;
     font-size: 96px;
+    /* 禁止被鼠标选中 */
+    user-select: none;
     color: rgba(231, 76, 60, 0.12);
     position: absolute;
+}
+
+
+/* 鼠标坐标值 */
+
+.coordinateContainer {
+    top: 120px;
+    height: 45px;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: coral;
+}
+
+.downCoordinateContainer,
+.moveCoordinateContainer {
+    top: 0px;
+    left: 10px;
+    width: 400px;
+    height: 45px;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.moveCoordinateContainer {
+    top: -45px;
+    left: 445px;
+}
+
+.coordinateValue {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+#down_x_abs::before,
+#down_x_rel::before,
+#move_x_abs::before,
+#move_x_rel::before {
+    content: "[x: ";
+}
+
+#down_y_abs::before,
+#down_y_rel::before,
+#move_y_abs::before,
+#move_y_rel::before {
+    content: "y: ";
+}
+
+#down_y_abs::after,
+#down_y_rel::after,
+#move_y_abs::after,
+#move_y_rel::after {
+    content: "]";
 }
