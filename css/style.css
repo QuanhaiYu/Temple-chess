@@ -14,7 +14,8 @@
 .container {
     width: var(--containerWidth);
     height: var(--containerHeight);
-    margin: 0px auto;
+    margin: 0 auto;
+    position: relative;
     /* background-color: coral; */
 }
 
@@ -30,33 +31,32 @@
     border-style: solid;
     transform: rotate(45deg);
     border-color: var(--lineColor);
-    position: relative;
+    position: absolute;
 }
 
 #line1,
 #line2 {
-    width: 318px;
+    top: 106px;
+    width: 317px;
     height: 5px;
     background-color: var(--lineColor);
-    position: relative;
+    position: absolute;
 }
 
 #line1 {
-    top: 48.3%;
-    left: -22.7%;
+    left: -50px;
     transform: rotate(45deg);
 }
 
 #line2 {
-    top: 46.5%;
-    left: -22.1%;
+    left: -47px;
     transform: rotate(-45deg);
 }
 
 .chessBoardContainer {
-    top: 105px;
+    top: 335px;
     left: 20px;
-    position: relative;
+    position: absolute;
     width: var(--chessBoardContainerWidth);
     height: var(--chessBoardContainerHeight);
     background-color: var(--lineColor);
@@ -82,26 +82,21 @@
     border-style: solid;
     transform: rotate(45deg);
     border-color: var(--lineColor);
-    position: relative;
+    position: absolute;
 }
 
 #line3,
 #line4 {
+    top: 410px;
+    left: -168px;
     width: 1160px;
     height: 5px;
-    background-color: var(--lineColor);
-    position: relative;
-}
-
-#line3 {
-    top: -21%;
-    left: -20.4%;
     transform: rotate(45deg);
+    background-color: var(--lineColor);
+    position: absolute;
 }
 
 #line4 {
-    top: -21.5%;
-    left: -20.4%;
     transform: rotate(-45deg);
 }
 
@@ -124,11 +119,13 @@
 /* 鼠标坐标值 */
 
 .coordinateContainer {
-    top: 120px;
+    bottom: 10px;
     height: 45px;
-    position: relative;
+    width: var(--chessBoardContainerWidth);
+    position: absolute;
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 7px;
     background-color: coral;
 }
 
@@ -138,21 +135,19 @@
     left: 10px;
     width: 400px;
     height: 45px;
-    position: relative;
+    position: absolute;
     font-size: 16px;
     font-weight: bold;
     color: white;
 }
 
 .moveCoordinateContainer {
-    top: -45px;
-    left: 445px;
+    left: 430px;
 }
 
 .coordinateValue {
     float: left;
     margin-right: 10px;
-    position: relative;
 }
 
 #down_x_abs::before,
